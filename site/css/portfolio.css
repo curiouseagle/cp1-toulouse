@@ -25,6 +25,7 @@
 
 .desktop {
   margin: 80px 0 -5px 0;
+  display: none;
 }
 
 .skills {
@@ -83,9 +84,9 @@ p {
   padding-right: 15px;
 }
 
-.introduction .desktop img {
+/* .introduction .desktop img {
   display: none;
-}
+} */
 
 .projects a.disabled {
   opacity: .4;
@@ -111,7 +112,11 @@ p {
     flex-direction: column;
   }
 
-  .introduction .desktop img {
+  /* .introduction .desktop img {
+    display: block;
+  } */
+
+  .desktop {
     display: block;
   }
 
