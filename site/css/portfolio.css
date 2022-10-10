@@ -31,6 +31,8 @@
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -79,4 +81,52 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.introduction .desktop img {
+  display: none;
+}
+
+.projects a.disabled {
+  opacity: .4;
+}
+
+.change-name {
+  background-color: rgb(255, 126, 148);
+  padding: .5rem 2rem;
+  margin-top: 1rem;
+}
+
+
+@media screen and (min-width:700px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+  }
+  
+  .introduction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .introduction .desktop img {
+    display: block;
+  }
+
+  .skills {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
 }
